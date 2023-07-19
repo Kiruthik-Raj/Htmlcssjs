@@ -1,0 +1,89 @@
+.dp
+{
+    height: 130px;
+    width: 130px;
+    margin-top: 15px;
+    margin-right: 700px;
+    margin-left: 700px;
+    margin-bottom: 170px;
+    border-radius: 75px;
+}
+.websitebody
+{
+    background-image: url(cssimages/black-background-with-focus-spot-light/zoro-3-sword-style-katana-one-piece.jpg);
+}
+.Home
+{
+    margin-top: 50px;
+    color:rgb(72, 105, 40);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    margin-bottom: 890px;
+}
+.Profilepicalignment
+{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size:xx-large;
+    color: rgb(19, 72, 73);
+    margin-bottom: 250px;
+    margin-top: 50px;
+}
+.Copyright
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: coral;
+    margin-top: 250px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    vertical-align: bottom;
+}
+.ab
+{
+    text-align: center;
+    margin-bottom: 15px;
+    color: aqua;
+    font-size: large;
+}
+.ab:hover
+{
+    color:red;
+}
+.touch
+{
+    text-align: center;
+    margin-bottom: 15px;
+    color: aqua;
+    font-size: large;
+}
+.touch:hover
+{
+    color:red;
+}
+.achi
+{
+    text-align: center;
+    margin-bottom: 15px;
+    color: aqua;
+    font-size: large;
+}
+.achi:hover
+{
+    color:red;
+}
+.mr
+{
+    text-align: center;
+    margin-bottom: 15px;
+    color: aqua;
+    font-size: large;
+}
+.mr:hover
+{
+    color: red;
+}

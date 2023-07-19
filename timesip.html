@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Time</title>
+    <script>
+        function luffy()
+        {
+            document.getElementById("MonkeyD").innerHTML = "Monkey D Luffy";
+            
+        }
+        window.alert("Caution!, You are about to see some of the hot characters and a cold character in One Piece!!!!");
+    </script>
+    <style>
+        #zoro
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h78>Date and time Viewer</h78>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click here to see Date and Time. </button>
+    <button type="button" onclick='document.getElementById("shanks").innerHTML = "Yon Sen Yon Haku Kyu Ju Man Berry." '>Akagami Shanks </button>
+    <button onclick="document.getElementById('myImage').src='cssimages/black-background-with-focus-spot-light/nico-robin-one-piece-ani.jpg'">Robin</button>
+    <button onclick="document.getElementById('myImage').src='cssimages/black-background-with-focus-spot-light/one-piece-nami.jpg'">Nami</button>
+    <button onclick="luffy()">Straw Hat Captain! </button>
+    <p id="MonkeyD">1.5 Billion Berries Bounty !!</p>
+    <p  id="demo"></p>
+    <p id="shanks"></p>
+    <img id="myImage" src="cssimages/black-background-with-focus-spot-light/one-piece-nami.jpg" alt="Nami's Image" style="width: 1000px;">
+    <h56>"Pirate Hunter" Roronoa Zoro!!!!</h56>
+    <img id="zoro" src="cssimages/black-background-with-focus-spot-light/zoro-3-sword-style-katana-one-piece.jpg" style="width: 1000px">
+    <button type="button" onclick="showzoro()" id="zorobutton">Click here to see Roronoa Zoro!!</button>
+    <script>
+        function showzoro()
+        {
+            document.getElementById("zoro").style.display = "block";
+            document.getElementById("zorobutton").style.display = "none";
+        }
+    </script>
+</body>
+</html>

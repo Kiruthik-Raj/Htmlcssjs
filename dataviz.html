@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Tree</title>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-wordtree.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <style type="text/css">      
+      html, body, #container { 
+        width: 100%; 
+        height: 100%; 
+        margin: 0; 
+        padding: 0; 
+      } 
+      .button-container{
+        padding: 20px 0 0 20px;
+        font-family: 'Arial'
+      }
+      button{
+        border: 1px solid #222222;
+        border-radius: 8px;
+        color: #222222;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 4px 18px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <span>Change Root Word to: </span>
+      <button onclick="switchRoot('I')">I</button>
+      <button onclick="switchRoot('This')">This</button>
+    </div>
+    <div id="container"></div>
+    <script>
+
+      let theChart;
+
+      anychart.onDocumentReady(function () {
+ 
+        $.ajax( 'https://gist.githubusercontent.com/awanshrestha/0033cf6344bcda10c242b64fe1d8c2f7/raw/115a11507a1d672fbf651f1bd413963318501010/i-have-a-dream-speech.txt'
+        ).done(function (text) {
+ 
+          // create a word tree chart
+          var chart = anychart.wordtree(text);
+          theChart = chart;
+
+          // set the root word
+          chart.word('I');
+ 
+          // configure the chart title
+          chart
+            .title()
+            .enabled(true)
+            .useHtml(true)
+            .text('<span style = "color: #2b2b2b; font-size:20px;">Word Tree of \"I Have a Dream\" Speech by Martin Luther King</span>');
+
+          // configure the font size and color
+          chart.fontColor("#0daf8d");
+          chart.fontWeight(500);
+          chart.fontStyle('italic');
+          chart.minFontSize(8);
+          chart.maxFontSize(16);
+ 
+          // configure the connectors
+          var connectors = chart.connectors();
+          connectors.curveFactor(0);
+          connectors.length(100);
+          connectors.offset(5);
+          connectors.stroke("1.5 #1976d2");
+ 
+          // set the container id
+          chart.container("container");
+
+          // initiate the drawing of the word tree chart
+          chart.draw();
+ 
+        }); 
+
+      });
+
+      // a function to set the root word
+      function switchRoot(type) {
+        theChart.word(type);
+      }
+
+    </script>
+  </body>    
+</html>

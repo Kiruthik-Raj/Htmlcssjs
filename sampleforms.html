@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Form Practice</title>
+    </head>
+    <body>
+        <form>
+            <h2>Radio Buttons</h2>
+            <input type="radio" id="html" name="fav_lang" value="html">
+            <label for="html">HTML</label><br>
+            <input type ="radio" id="css" name="fav_lang" value="css">
+            <label for="css">CSS</label><br>
+            <input type = "radio" id="js" name="fav_lang" value="js">
+            <label for="js">Javascript</label>
+            <h3>CheckBox</h3>
+            <input type="checkbox" id="Html" name="Core" value="Html">
+            <label for="Html">HTML</label><br>
+            <input type="checkbox" id="Css" name="Core" value="Css">
+            <label for="Css">CSS</label><br>
+            <input type="checkbox" id="Js" name="Core" value="Js">
+            <label for="Js">JS</label><br>
+            <input type="submit" value="Submit">
+            <h1>Select Element</h1>
+            <label for="cars" >Choose a car: </label>
+            <select id="cars" name="cars">
+                <option value="bugatti">Bugatti</option>
+                <option value="koenigsegg">Koenigsegg</option>
+            </select>
+            <input type="submit" value="Submit">
+            <h4>Text Area</h4>
+            <textarea name="messg" rows="10" columns="40">You can replace me, can't you? </textarea>
+            <input type="submit" value="Submit">
+            <h5>Passcode</h5>
+            <label for="Username">Username: </label>
+            <input type="text" id="Username" name="Username" value="UserName">
+            <label for="Password">Password: </label>
+            <input type="password" id="Password" name="password" value="PassWord">
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <h6>Table</h6>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Golden Sachs</td>
+                    <td>Rake</td>
+                    <td>Argentina</td>
+                </tr>
+                <tr>
+                    <td>CristianoRonaldo</td>
+                    <td>Cristiano Ronaldo</td>
+                    <td>Portugal</td>
+                </tr>
+            </table>
+            <style>
+                table,th,td{
+                    border: 1px solid black;
+                }
+            </style>
+        </form>
+        <script language = "JavaScript" type="text/javascript">
+            document.write("<h1 align=center>Lol</h1>")
+            document.bgColor="white"
+            document.fgColor="black"
+            var num1, num2, sum
+            num1 = prompt("Enter the 1st number...")
+            num2 = prompt("Enter the 2nd number")
+            sum = parseInt(num1) + parseInt(num2)
+            window.alert("Sum = " + sum)
+            var rand = Math.floor(Math.random() * 10 + 1)
+            window.alert("Rand = " + rand)
+            var three = Math.floor(Math.PI)
+            window.alert(three)
+        </script>
+    </body>
+</html>

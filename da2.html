@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="datwostyle.css">
+    <title>JS Validation Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Javascript Form for Detail Validation</h2>
+        </div>
+    <form id="form" class="form" action="index.js" method="post">
+    <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Please enter your username"  id="username" />
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <label for="username">Email</label>
+        <input type="email" placeholder="Please enter your Email-id" id="email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <label for="username">Password</label>
+        <input type="password" placeholder="Enter your password" id="password"/>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <label for="username">Retype Password</label>
+        <input type="password" placeholder="Enter your Password again" id="password2"/>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <button>Submit</button>
+        <script src="index.js"></script>
+    </form>
+    </div>
+</body>
+</html>
